@@ -19,6 +19,7 @@ if [ ! -d /mnt/backup ] ; then mkdir /mnt/backup ; fi
 # respaldamos
 /usr/bin/logger Respaldando - archivos importantes 1
 /usr/bin/rsync -rtv --del --modify-window=2 /path/to/archivos_importantes_1 /mnt/backup
+# --modify-window=2 indica a RSync considerar 2s para el timestap de los archivos, necesario solo en FAT32
 
 # Agrega cuanto rsync necesites
 #/usr/bin/logger Respaldando - archivos importantes 2
