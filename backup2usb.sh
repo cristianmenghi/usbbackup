@@ -32,5 +32,5 @@ if [ ! -d /mnt/backup ] ; then mkdir /mnt/backup ; fi
 /bin/umount /mnt/backup
 
 # log de fin de backup
-echo "Finlizado respaldo" |  /usr/bin/mail -s "Finalizado respaldo: $(date)" cmenghi@rwy.co
+echo "Finlizado respaldo" |  /usr/bin/mail -s "Finalizado respaldo: $(date)" correo@usuarios.com
 /usr/bin/logger Finalizado respaldo: `date`
