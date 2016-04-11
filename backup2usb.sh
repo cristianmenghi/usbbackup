@@ -25,7 +25,7 @@ if [ ! -d /mnt/backup ] ; then mkdir /mnt/backup ; fi
 #/usr/bin/logger Respaldando - archivos importantes 2
 #/usr/bin/rsync -rtv --del --modify-window=2 /path/to/archivos_importantes_2 /mnt/backup
 
-# focezar sync de archivos antes de desmontar
+# forzar sync de archivos antes de desmontar
 /bin/sync
 
 # desmontar disco
